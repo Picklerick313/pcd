@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import logo from "/src/assets/img/logo.svg";
+import logo from "/src/assets/img/name.svg";
 import blur from "/src/assets/img/bg.svg";
 import SwitchLang from "./SwitchLang.astro";
 import { getLangFromUrl, useTranslations } from '@/i18n/utils';
@@ -16,7 +16,7 @@ const t = useTranslations(lang);
   class="container fixed top-0 md:left-5 md:right-5 xl:max-w-7xl mx-auto font-sans bg-[#97979733]/20 backdrop-blur-[80px] rounded-xl py-2 px-5 flex justify-between items-center z-50"
 >
   <div class="w-26 z-50">
-    <a href={`/${lang}/`}><Image src={logo} width="100" height="40" alt="OV logo" /></a>
+    <a href={`/${lang}/`}><Image src={logo} width="100" height="45" alt="OV logo" /></a>
   </div>
 
   <div class="flex hover:cursor-default">

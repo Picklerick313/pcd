@@ -3,7 +3,7 @@ import Layout from "@/layouts/Layout.astro";
 import Head from "@/components/Head.astro";
 import Title from "@/components/Title.astro";
 import { Image, Picture } from "astro:assets";
-import me from "/src/assets/img/oleksii-vratskyi.jpg";
+import me from "/src/assets/img/profile_pic.jpg";
 import github from "/src/assets/img/github.svg";
 import blur from "/src/assets/img/bg.png";
 import { getAbsoluteLocaleUrl } from "astro:i18n";
@@ -34,7 +34,7 @@ export const prerender = true;
             formats={["avif", "webp"]}
             width="300"
             height="300"
-            alt='Oleksii Vratskyi'
+            alt='Lyu Xingze (Rick)'
           />
         </div>
 
@@ -42,153 +42,299 @@ export const prerender = true;
           <h6
             class="text-4xl lg:text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0"
           >
-          Oleksii Vratskyi
+          Lyu Xingze (Louis)
           </h6>
+          <p class="text-lg font-medium text-zinc-300 mt-2">MSc Student | Robotics Engineer</p>
           <div class="text-xl font-light text-zinc-200 max-w-xl mt-5">
             <p>
-              I am a freelancer from Ukraine, I am engaged in website development in different directions for several years, in this time I have managed to work with online stores, landing pages, blogs, etc.
+              I am a first-class graduate from Xi'an Jiaotong-Liverpool University, currently pursuing my MSc at the University of Manchester. As a Robotics Engineer and Developer, I specialize in building intelligent robotic systems and developing innovative solutions in the field of robotics.
             </p>
             <p class="mt-5">
-              I will be glad to work with you to create together a good product that will allow you to attract more customers, as well as increase the attractiveness of your company on the Internet.
+              My expertise includes Python, ROS2, SLAM, Robotic arm manipulation, and C++. I am proficient in using mainstream AI tools and passionate about advancing robotics technology. I'm always excited to collaborate on challenging projects that push the boundaries of what's possible in robotics.
             </p>
           </div>
         </div>
       </div>
     </div>
-
+         <!-- SKILLS SECTION -->
     <div class="mt-5">
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 content-center justify-center text-zinc-200 blur-bg rounded-xl p-5 min-h-[200px]"
-      >
-        <div class="grid content-center">
-          <h2
-            class="text-5xl font-black text-center bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0"
-          >
-          Social links
-          </h2>
+      <div class="blur-bg rounded-xl p-5 lg:p-10">
+        <h2 class="text-5xl font-black text-center bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0 mb-8">
+          Skills
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+          <div class="blur-bg rounded-xl p-5 hover:bg-primary-0 duration-150">
+            <p class="text-lg font-semibold text-white">Python</p>
+          </div>
+          <div class="blur-bg rounded-xl p-5 hover:bg-primary-0 duration-150">
+            <p class="text-lg font-semibold text-white">ROS2</p>
+          </div>
+          <div class="blur-bg rounded-xl p-5 hover:bg-primary-0 duration-150">
+            <p class="text-lg font-semibold text-white">SLAM</p>
+          </div>
+          <div class="blur-bg rounded-xl p-5 hover:bg-primary-0 duration-150">
+            <p class="text-lg font-semibold text-white">Robotic Arm</p>
+          </div>
+          <div class="blur-bg rounded-xl p-5 hover:bg-primary-0 duration-150">
+            <p class="text-lg font-semibold text-white">C++</p>
+          </div>
+          <div class="blur-bg rounded-xl p-5 hover:bg-primary-0 duration-150">
+            <p class="text-lg font-semibold text-white">AI Tools</p>
+          </div>
         </div>
-
-        <ul class="grid grid-cols-2 gap-5 place-content-center">
-          <li>
-            <a class="mr-5" href="https://t.me/dev_it_dude" target="_blank">
-              <div
-                class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
-              >
-                <h6>
-                  <svg
-                    class="inline-block w-10 -rotate-45"
-                    fill="none"
-                    stroke="#ffffff"
-                    stroke-width="1.2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-                    ></path>
-                  </svg>
-                   Telegram
-                </h6>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="mailto:vratskiy0@gmail.com">
-              <div
-                class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
-              >
-                <h6>
-                  <svg
-                    class="inline-block w-10"
-                    fill="none"
-                    stroke="#ffffff"
-                    stroke-width="1.2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-                    ></path>
-                  </svg>
-                  Email
-                </h6>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.behance.net/alexvracky" target="_blank">
-              <div
-                class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
-              >
-                <h6>
-                  <svg
-                    class="inline-block w-10"
-                    xmlns="http://www.w3.org/2000/svg"
-                    x="0px"
-                    y="0px"
-                    width="40"
-                    height="40"
-                    viewBox="0,0,256,256"
-                    style="fill:#000000;"
-                  >
-                    <g transform=""
-                      ><g
-                        fill="#ffffff"
-                        fill-rule="nonzero"
-                        stroke="none"
-                        stroke-width="1"
-                        stroke-linecap="butt"
-                        stroke-linejoin="miter"
-                        stroke-miterlimit="10"
-                        stroke-dasharray=""
-                        stroke-dashoffset="0"
-                        font-family="none"
-                        font-weight="none"
-                        font-size="none"
-                        text-anchor="none"
-                        style="mix-blend-mode: normal"
-                        ><g transform="scale(5.12,5.12)"
-                          ><path
-                            d="M9,4c-2.74952,0 -5,2.25048 -5,5v32c0,2.74952 2.25048,5 5,5h32c2.74952,0 5,-2.25048 5,-5v-32c0,-2.74952 -2.25048,-5 -5,-5zM9,6h32c1.66848,0 3,1.33152 3,3v32c0,1.66848 -1.33152,3 -3,3h-32c-1.66848,0 -3,-1.33152 -3,-3v-32c0,-1.66848 1.33152,-3 3,-3zM11,16c-0.55226,0.00006 -0.99994,0.44774 -1,1v16.00195c0.00006,0.55226 0.44774,0.99994 1,1h7.60938c0.00065,0 0.0013,0 0.00195,0c0.41242,-0.00065 1.85909,-0.03581 3.35547,-0.73828c1.49633,-0.70247 3.0332,-2.28232 3.0332,-4.83594c0,-1.61999 -0.53053,-2.83986 -1.24219,-3.64258c-0.29784,-0.33595 -0.57608,-0.37359 -0.89062,-0.58008c0.60177,-0.70396 1.13281,-1.65669 1.13281,-3.20508c0,-2.38267 -1.30503,-3.8614 -2.64648,-4.46289c-1.34146,-0.60149 -2.72095,-0.53711 -3.06055,-0.53711zM30,16c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h6c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM12,18h6.29297c0.4524,0 1.42814,-0.0037 2.24219,0.36133c0.81404,0.36501 1.46484,0.88735 1.46484,2.63867c0,1.87589 -0.7229,2.23586 -1.15234,2.45703c-0.35558,0.18367 -0.56742,0.56163 -0.53852,0.9608c0.02891,0.39917 0.293,0.74267 0.67133,0.87319c0.37813,0.12962 0.88315,0.37128 1.28125,0.82031c0.3981,0.44903 0.73828,1.1074 0.73828,2.31641c0,1.83038 -0.84269,2.53711 -1.88281,3.02539c-1.04012,0.48828 -2.28624,0.54848 -2.50781,0.54883h-6.60937zM33,19c-0.91237,0 -2.58259,0.18126 -4.13672,1.24805c-1.55413,1.06679 -2.86328,3.09135 -2.86328,6.25195c0,2.9434 1.20884,4.94415 2.72852,6.06836c1.51967,1.1242 3.24217,1.43164 4.44141,1.43164c2.53915,0 4.33457,-0.86305 5.41016,-2.08984c0.99343,-1.13308 1.32229,-2.46985 1.37305,-3.61328c0.0272,-0.08476 0.04297,-0.17278 0.04688,-0.26172c0.00031,-0.0086 -0.00225,-0.0187 -0.00195,-0.02734c0.00005,-0.00245 0.00195,-0.00537 0.00195,-0.00781c-0.00029,-0.03328 -0.00225,-0.06652 -0.00586,-0.09961c0,-0.0013 0,-0.0026 0,-0.00391c0.05445,-1.80735 -0.08556,-3.89615 -1.05078,-5.68359c-0.98874,-1.831 -2.97679,-3.21289 -5.94336,-3.21289zM15,20v3h2.61914c0.357,0 1.54688,-0.22545 1.54688,-1.56445c0,-1.34 -1.54816,-1.43555 -1.78516,-1.43555zM33,21c2.40843,0 3.48288,0.86811 4.18164,2.16211c0.566,1.04814 0.73808,2.45623 0.77148,3.83789h-2.95312h-4c-0.55226,0.00006 -0.99994,0.44774 -1,1c0,0 0.0086,0.25241 0.08203,0.47266c0.07341,0.22024 0.21809,0.49152 0.46094,0.73438c0.4857,0.4857 1.29036,0.79297 2.45703,0.79297c1.16667,0 1.97133,-0.30727 2.45703,-0.79297c0.0686,-0.0686 0.07739,-0.13566 0.13086,-0.20703h2.25391c-0.13318,0.55475 -0.34711,1.1125 -0.76562,1.58984c-0.67791,0.77321 -1.7974,1.41016 -3.90625,1.41016c-0.82876,0 -2.19413,-0.25652 -3.25195,-1.03906c-1.05783,-0.78255 -1.91797,-2.03134 -1.91797,-4.46094c0,-2.6464 0.93048,-3.87205 1.99609,-4.60352c1.06562,-0.73146 2.39528,-0.89648 3.00391,-0.89648zM33.08594,22.60156c-0.591,0 -1.01552,0.07547 -1.35352,0.23047c-0.338,0.154 -0.58975,0.38714 -0.84375,0.61914c-0.169,0.232 -0.33883,0.46539 -0.42383,0.77539c-0.085,0.232 -0.16897,0.46439 -0.16797,0.77539h5.4082c-0.085,-0.775 -0.33872,-1.39425 -0.76172,-1.78125c-0.422,-0.387 -1.01242,-0.61914 -1.85742,-0.61914zM15.0332,26v3.98047h2.92969c0.254,0 2.03711,-0.09802 2.03711,-1.91602c0,-1.82 -1.40111,-2.06445 -2.03711,-2.06445z"
-                          ></path></g
-                        ></g
-                      ></g
-                    >
-                  </svg>
-                  Behance
-                </h6>
-              </div>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/vratskyi" target="_blank">
-              <div
-                class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
-              >
-                <h6>
-                  <Image
-                    class="inline-block w-10"
-                    src={github}
-                    width="40"
-                    height="40"
-                    alt="oleksii vratskyi github"
-                  />
-                  GitHub
-                </h6>
-              </div>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
+
+    <!-- CAREER OBJECTIVES -->
+    <div class="mt-5">
+      <div class="blur-bg rounded-xl p-5 lg:p-10">
+        <h2 class="text-5xl font-black text-center bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0 mb-5">
+          Career Objectives
+        </h2>
+        <p class="text-2xl font-light text-zinc-200">
+          I'm focused on developing intelligent robotic systems that bridge the gap between autonomous navigation and precision manipulation. My research interests include advanced SLAM techniques for dynamic environments, robot perception and sensor fusion, autonomous manipulation systems, and human-robot interaction.
+        </p>
+        <p class="text-2xl font-light text-zinc-200 mt-5">
+          I aim to contribute to innovative robotics solutions that enhance automation capabilities across industrial and service robotics sectors.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="mt-5">
+      <div class="blur-bg rounded-xl p-5 lg:p-10">
+        <h2 class="text-5xl font-black text-center bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0 mb-8">
+          Projects
+        </h2>
+        
+        <!-- Project Grid -->
+        <div class="grid lg:grid-cols-2 gap-6">
+          <!-- SLAM Robot Project -->
+          <div class="blur-bg rounded-xl p-6 hover:bg-white/5 transition-all duration-150">
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-2xl font-bold text-white">SLAM Robot</h3>
+              <span class="text-sm font-medium text-zinc-400">2022-2023</span>
+            </div>
+            <p class="text-lg text-zinc-300 mb-4">
+              Simulated SLAM algorithms under ROS2 and validated them with physical robots
+            </p>
+            <ul class="space-y-2 text-zinc-200">
+              <li class="flex items-start">
+                <span class="text-primary-0 mr-2">•</span>
+                <span>Used OpenCV for visual Hough circle detection to guide grasping</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary-0 mr-2">•</span>
+                <span>Guided robot localization and navigation using Apriltag</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-primary-0 mr-2">•</span>
+                <span>Simulated and deployed karto and gmapping algorithms</span>
+              </li>
+            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <span class="px-3 py-1 bg-primary-0/20 text-primary-0 rounded-full text-sm">ROS2</span>
+              <span class="px-3 py-1 bg-primary-0/20 text-primary-0 rounded-full text-sm">SLAM</span>
+              <span class="px-3 py-1 bg-primary-0/20 text-primary-0 rounded-full text-sm">OpenCV</span>
+              <span class="px-3 py-1 bg-primary-0/20 text-primary-0 rounded-full text-sm">Apriltag</span>
+            </div>
+          </div>
+                    <!-- Robot Arm Algorithm Assistant Project -->
+                    <div class="blur-bg rounded-xl p-6 hover:bg-white/5 transition-all duration-150">
+                      <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-2xl font-bold text-white">Robot Arm Algorithm Assistant (Aitrox)</h3>
+                        <span class="text-sm font-medium text-zinc-400">2024.9-2025.3</span>
+                      </div>
+                      <p class="text-lg text-zinc-300 mb-4">
+                        Technical research and development for medical robotic arm applications
+                      </p>
+                      <ul class="space-y-2 text-zinc-200">
+                        <li class="flex items-start">
+                          <span class="text-primary-0 mr-2">•</span>
+                          <span>Conducted technical research and initial development for Realman robotic arm ultrasound thyroid scanning</span>
+                        </li>
+                        <li class="flex items-start">
+                          <span class="text-primary-0 mr-2">•</span>
+                          <span>Researched and wrote research plans and patents:</span>
+                        </li>
+                        <li class="flex items-start ml-4">
+                          <span class="text-accent-0 mr-2">◦</span>
+                          <span class="italic">Robotic arm assisted by 3D vision for fast ultrasound scanning</span>
+                        </li>
+                        <li class="flex items-start ml-4">
+                          <span class="text-accent-0 mr-2">◦</span>
+                          <span class="italic">VLA integration with medical robotic arms to achieve natural language control for liver cancer surgery</span>
+                        </li>
+                      </ul>
+                      <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-accent-0/20 text-accent-0 rounded-full text-sm">Medical Robotics</span>
+                        <span class="px-3 py-1 bg-accent-0/20 text-accent-0 rounded-full text-sm">3D Vision</span>
+                        <span class="px-3 py-1 bg-accent-0/20 text-accent-0 rounded-full text-sm">VLA</span>
+                        <span class="px-3 py-1 bg-accent-0/20 text-accent-0 rounded-full text-sm">NLP</span>
+                      </div>
+  
+      <!-- Skills Section -->
+      <!-- <h3 class="text-2xl font-semibold text-white mt-8 mb-3">Skills</h3>
+      <p>
+        <strong>Programming Languages:</strong> Python, C++<br/>
+        <strong>Robotics Frameworks:</strong> ROS2<br/>
+        <strong>Specializations:</strong> SLAM (Simultaneous Localization and Mapping), Robotic Arm Manipulation<br/>
+        <strong>Tools & Technologies:</strong> Proficient in mainstream AI tools and applications
+      </p> -->
+  
+      <!-- Career Objectives Section -->
+      <!-- <h3 class="text-2xl font-semibold text-white mt-8 mb-3">Career Objectives & Research Interests</h3>
+      <p>
+        I'm focused on developing intelligent robotic systems that bridge the gap between autonomous navigation and precision manipulation. My research interests include advanced SLAM techniques for dynamic environments, robot perception and sensor fusion, autonomous manipulation systems, and human-robot interaction.
+      </p>
+      <p class="mt-3">
+        I aim to contribute to innovative robotics solutions that enhance automation capabilities across industrial and service robotics sectors.
+      </p> -->
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Second Section: Social Links (SEPARATE WRAPPER) -->
+<div class="mt-5">
+  <div
+    class="grid lg:grid-cols-2 content-center justify-center text-zinc-200 blur-bg rounded-xl p-5 min-h-[200px]"
+  >
+    <!-- LEFT COLUMN: Social Links Heading -->
+    <div class="grid justify-center content-center mb-5 lg:mb-0">
+      <h2
+        class="text-5xl font-black text-center bg-clip-text text-transparent bg-gradient-to-r from-primary-0 to-accent-0"
+      >
+        Social links
+      </h2>
+    </div>
+    
+    <!-- RIGHT COLUMN: Social Icons -->
+    <div class="grid justify-center content-center">
+      <ul class="grid grid-cols-2 gap-5 place-content-center">
+        <li>
+          <a class="mr-5" href="https://drive.google.com/file/d/1GD49J8TvZKo90e2-0QpPCWU77AhUSTJ5/view?usp=sharing" target="_blank">
+            <div
+              class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
+            >
+              <h6>
+                <svg
+                  class="inline-block w-10"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="1.2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  ></path>
+                </svg>
+                Resume
+              </h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:picklerick313@outlook.com">
+            <div
+              class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
+            >
+              <h6>
+                <svg
+                  class="inline-block w-10"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-width="1.2"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  ></path>
+                </svg>
+                Email
+              </h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/rick-pickle-64a609356/" target="_blank">
+            <div
+              class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
+            >
+              <h6>
+                <svg
+                  class="inline-block w-10"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  viewBox="0,0,256,256"
+                  style="fill:#000000;"
+                >
+                  <g transform="">
+                    <g
+                      fill="#ffffff"
+                      fill-rule="nonzero"
+                      stroke="none"
+                      stroke-width="1"
+                      stroke-linecap="butt"
+                      stroke-linejoin="miter"
+                      stroke-miterlimit="10"
+                      stroke-dasharray=""
+                      stroke-dashoffset="0"
+                      font-family="none"
+                      font-weight="none"
+                      font-size="none"
+                      text-anchor="none"
+                      style="mix-blend-mode: normal"
+                    >
+                      <g transform="scale(5.12,5.12)">
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+                LinkedIn
+              </h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/Picklerick313" target="_blank">
+            <div
+              class="grid grid-cols-2 lg:grid-cols-1 hover:bg-primary-0 duration-150 rounded-xl px-10 py-5 w-full max-w-[250px]"
+            >
+              <h6>
+                <Image
+                  class="inline-block w-10"
+                  src={github}
+                  width="40"
+                  height="40"
+                  alt="oleksii vratskyi github"
+                />
+                GitHub
+              </h6>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
   </section>
 </Layout>
